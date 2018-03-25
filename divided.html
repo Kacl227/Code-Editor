@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>See Your Code</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+    <link href="divided.css" rel="stylesheet" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="divided.js"></script>
+</head>
+<body>
+    <div id="topbar">
+        <h3 id="code-writer">Code Writer</h3>
+        <div class="centerable">
+        <ul id="nav-bar">
+            <li class="nav-element unselected" id="html">HTML</li>
+            <li class="nav-element unselected" id="css">CSS</li>
+            <li class="nav-element unselected" id="javascript">JavaScript</li>
+            <li class="nav-element unselected" id="display">Display</li>
+            <div style="clear:both;"></div>
+        </ul>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+    <div id="wrapper">
+    <textarea class="divider" id="html-text">
+        <h1>Matt</h1>
+        <h2>Pretzel</h2>
+        <div id="yellow"></div>
+        <button id="submit">Hakuna Mattata</button>
+    </textarea>
+    <textarea class="divider" id="css-text">
+        #yellow {
+        width: 50px;
+        height: 50px;
+        background-color: yellow;
+      }
+    </textarea>
+    <textarea class="divider" id="javascript-text">
+        $("#submit").click(function () {
+            $("#yellow").fadeToggle();
+        })
+    </textarea>
+    <iframe class="divider" id="display-text"></iframe>
+    </div>
+</body>
+</html>

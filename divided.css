@@ -1,0 +1,80 @@
+body {
+    background-color: rgba(105,121,137,0.27);
+    font-size: 1rem;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.centerable {
+    text-align: center;
+    width: 100%;
+}
+
+.divider {
+    background-color: white;
+    display: inline-block;
+    margin: 0 .1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.divider:focus {
+    outline-color: #343B48;
+}
+
+#code-writer {
+    color: darkslategray;
+    font-size: 2rem;
+    margin: 5px 0;
+    position: absolute;
+    text-align: left;
+}
+
+html {
+    height: 100%;
+}
+
+.nav-element {
+    border: solid .2rem;
+    border-radius: .2rem;
+    color: white;
+    float: left;
+    list-style-type: none;
+    margin: -.1rem;
+    padding: .5rem .5rem;
+}
+
+.unselected {
+    background-color: #697989;
+    border-color: #697989;
+}
+
+.selected {
+    background-color: #343B48;
+    border-color: #343B48;
+}
+
+#nav-bar {
+    display: inline-block;
+    margin: .5rem 0 0 0;
+    padding: 0;
+}
+
+#topbar {
+    background-color: #fff2ee;
+    border-bottom: #697989 solid .3rem;
+    box-shadow: 1px 2px #DBCFCB;;
+    font-family: 'IBM Plex Mono', monospace;
+    overflow: auto;
+    padding: 10px 5px;
+}
+
+#wrapper {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-evenly;
+    margin: .1rem;
+}
